@@ -1,0 +1,20 @@
+Chatbot AI Free Models (U Version)
+
+Custom License - Free Use with Attribution Link
+
+Copyright (c) 2025 NewCodeByte
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, merge, publish, and distribute the Software for any purpose, including commercial purposes, under the following conditions:
+
+1. A visible link to https://newcodebyte.altervista.org must be kept intact in the footer of the chatbot interface at all times.
+
+2. The footer link may only be removed after a one-time donation of at least $10 USD (https://buymeacoffee.com/codebytewp). Unauthorized removal of the footer link is a violation of this license.
+
+3. The Software is provided "as is", without warranty of any kind, express or implied. The author shall not be liable for any claim, damages or other liability arising from the use of the Software.
+
+4. This license must be included in all copies or substantial portions of the Software.
+
+Optional:
+- To remove the footer link legally, please visit https://newcodebyte.altervista.org or contact kalisperanza@gmail.com.
+
+Thank you for respecting the author's work.
