@@ -67,14 +67,6 @@ A self-hostable PHP chatbot application that uses SQLite for data storage and in
     *   MIME type and file size validation for uploads.
     *   DOMPurify for sanitizing Markdown-rendered HTML from bot messages.
 
-## Screenshots
-
-*(Add screenshots of the chatbot widget and admin panel sections here)*
-
-## Demo
-
-*(Link to a live demo if available)*
-
 ## Technology Stack
 
 *   **Backend:** PHP (7.x or higher recommended)
