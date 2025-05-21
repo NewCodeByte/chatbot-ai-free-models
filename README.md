@@ -174,7 +174,7 @@ Please refer to the `LICENSE.txt` file (if included in the repository) or the "L
 Developed by **NewCodeByte**.
 
 *   Website: [https://newcodebyte.altervista.org](https://newcodebyte.altervista.org)
-*   Contact: [kalisperanza@gmail.com](mailto:kalisperanza@gmail.com)
+*   Contact: [software_on_demand@yahoo.it](mailto:software_on_demand@yahoo.it)
 
 ## Contributing
 
