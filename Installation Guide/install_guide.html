@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Guide - Chatbot AI Free Models</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333; /* Dark base text color */
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #007bff; /* Primary blue */
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5em;
+            font-size: 2.2em;
+        }
+        h2 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.3em;
+            font-size: 1.8em;
+        }
+        h3 {
+            font-size: 1.4em;
+            color: #17a2b8; /* Teal for subtitles */
+        }
+        p, li {
+            font-size: 1em;
+            margin-bottom: 0.7em;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        /* --- CORRECT CSS FOR CODE AND PRE --- */
+        code {
+            background-color: #e9ecef; /* Light grey background */
+            padding: 3px 6px; /* Slightly more padding */
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 0.9em;
+            color: #333; /* Dark text color, contrasts well with background */
+        }
+        pre {
+            background-color: #e9ecef; /* Light grey background */
+            padding: 15px;
+            border: 1px solid #ddd; /* Added light border */
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #333; /* Dark base text color for the block */
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; /* Ensure monospace font */
+            font-size: 0.9em; /* Consistent size */
+            line-height: 1.5; /* Improve block readability */
+        }
+        /* Specific style for 'code' INSIDE 'pre' */
+        pre code {
+            background-color: transparent; /* Transparent background to inherit from 'pre' */
+            padding: 0; /* No extra padding */
+            border-radius: 0; /* No extra rounded corners */
+            border: none; /* No extra border */
+            color: inherit; /* Inherit color from 'pre' (which is #333) */
+            font-size: inherit; /* Inherit size from 'pre' */
+        }
+        /* --- END CORRECT CSS --- */
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .alert-info {
+            color: #0c5460;
+            background-color: #d1ecf1;
+            border-color: #bee5eb;
+        }
+        .alert-warning {
+            color: #856404;
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+        }
+        .alert-danger {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .credentials-removed { /* Style for setup message */
+            background-color: #e3f2fd;
+            border-left: 5px solid #17a2b8;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chatbot AI Free Models</h1>
+
+        <p class="alert alert-info">Thank you for choosing <b>Chatbot AI Free Models!</b> This chatbot allows you to integrate a customizable virtual assistant into your website, using AI models available for free through OpenRouter.ai.</p>
+
+        <h2>Main Features</h2>
+        <ul>
+            <li><strong>Easy Integration:</strong> Add the chatbot to any website with a single line of JavaScript.</li>
+            <li><strong>Secure Admin Panel:</strong> A complete interface to configure appearance, behavior, knowledge base, API, etc., protected by login.</li>
+            <li><strong>Guided Setup:</strong> Secure creation of the administrator account on first access.</li>
+            <li><strong>Secure Passwords:</strong> Admin passwords are stored using modern hashing (not plaintext).</li>
+            <li><strong>Customizable:</strong> Modify colors, icons, title, welcome message.</li>
+            <li><strong>Flexible:</strong> Define the bot's knowledge base and behavior rules.</li>
+            <li><strong>Conversational Memory:</strong> The bot can remember previous messages within a session.</li>
+            <li><strong>Multilingual Support:</strong> The admin panel and login/setup interface are translatable.</li>
+            <li><strong>OpenRouter.ai Ready:</strong> Pre-configured to use OpenRouter.ai models.</li>
+        </ul>
+
+        <h2>Quick Installation</h2>
+        <ol>
+            <li>
+                <h3>Upload Files</h3>
+                <p>Unzip the archive and upload the entire chatbot folder (e.g., <code>chatbot-x/</code>) to your web server in a location accessible via URL.</p>
+            </li>
+            <li>
+                <h3>Folder and File Permissions</h3>
+                <p>Ensure the web server has write permissions for:</p>
+                <ul>
+                    <li>The main chatbot folder (to create and write to the <code>db.db</code> database file).</li>
+                    <li>The <code>images/</code> subfolder (for uploading icons/logos).</li>
+                    <li>The <code>sounds/</code> subfolder (for uploading the notification sound).</li>
+                </ul>
+                <p class="alert alert-warning">Verify that the <code>db.db</code> file, once created, is also writable by the web server process.</p>
+            </li>
+            <li>
+                <h3>First Access and Admin Setup</h3>
+                <p>Open your browser and navigate to the login page: <code>http://yoursite.com/path_to_chatbot/login.php</code>.</p>
+                <div class="credentials-removed">
+                    <p>On first access, the system will detect that no administrator exists and will present you with a <strong>registration form</strong>.</p>
+                    <p>Enter an <strong>Admin Username</strong> and a <strong>secure Password</strong> (and confirm it) to create your account. This account will be saved in the <code>db.db</code> database with the password protected by hashing.</p>
+                </div>
+                <p>After creating the account, you will be redirected (or you can navigate) to the normal login page.</p>
+            </li>
+            <li>
+                <h3>Accessing the Admin Panel</h3>
+                 <p>Once the account is created, log in at <code>http://yoursite.com/path_to_chatbot/login.php</code> using the credentials you just defined.</p>
+                 <p>After logging in, you will be redirected to the Control Panel (<code>admin.php</code>).</p>
+            </li>
+            <li>
+                <h3>Initial Configuration</h3>
+                <p>Inside the Control Panel:</p>
+                <ul>
+                    <li>Go to the <strong>Settings</strong> tab.</li>
+                    <li>Enter your <strong>API Key</strong> from <a href="https://openrouter.ai/" target="_blank" rel="noopener">OpenRouter.ai</a>.</li>
+                    <li>Select an <strong>AI Model</strong> (many free models are available).</li>
+                    <li>Customize the <strong>Knowledge Base</strong> and <strong>Behavior Rules</strong>. Consult the <strong>Guide Tab</strong> in the panel for templates and suggestions.</li>
+                    <li>Explore the other tabs (Style, Images, Sounds) for further customization.</li>
+                    <li>Select the desired <strong>Interface Language</strong>.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Integrate into Your Site</h3>
+                <p>Copy the script line provided in the <strong>Guide Tab</strong> of the admin panel. It should look similar to:</p>
+                <pre><code>&lt;script src="/path_to_chatbot_folder/embed.js" defer>&lt;/script&gt;</code></pre>
+                <p>Paste this line into the pages of your website where you want the chatbot to appear, preferably before the closing <code>&lt;/body&gt;</code> tag. Ensure the path to the <code>embed.js</code> script is correct.</p>
+            </li>
+        </ol>
+
+        <h2>File Structure (Main)</h2>
+        <ul>
+            <li><code>admin.php</code>: The administration panel.</li>
+            <li><code>chatbot.php</code>: Handles the chatbot logic and interface.</li>
+            <li><code>embed.js</code>: Script for website integration.</li>
+            <li><code>style.css</code>: Stylesheets.</li>
+            <li><code>admin.js</code> & <code>chatbot.js</code>: JavaScript files.</li>
+            <li><code>login.php</code>: Login and initial setup page.</li>
+            <li><code>export.php</code>: Message export.</li>
+            <li><code>db_init.php</code>: Database initialization script.</li>
+            <li><code>db.db</code>: SQLite database (created on first run).</li>
+            <li><code>/images/</code>: Images folder.</li>
+            <li><code>/sounds/</code>: Sounds folder.</li>
+            <li><code>/languages/</code>: Translations folder.</li>
+            <li><code>install_guide.html</code>: This guide file.</li>
+        </ul>
+
+        <h2>Security</h2>
+        <ul>
+            <li><strong>Password Hashing:</strong> Passwords are now stored securely using hashing.</li>
+            <li><strong>Directory Protection:</strong> Always consider protecting specific files like <code>admin.php</code> with additional methods (e.g., <code>.htaccess</code> on Apache servers) if you require a higher level of security, such as limiting access to specific IP addresses or requiring additional HTTP authentication. Direct database access should already be protected by the provided .htaccess file.</li>
+            <li><strong>File Permissions:</strong> Set permissions to the minimum necessary for operation, ensuring write access only where needed (main folder for <code>db.db</code>, <code>images/</code>, <code>sounds/</code>).</li>
+        </ul>
+
+        <h2>Troubleshooting</h2>
+        <p>Consult the "Troubleshooting Common Issues" section in the <strong>Guide Tab</strong> of the administration panel.</p>
+         <ul>
+            <li><strong>DB Error on first access to <code>login.php</code>:</strong> Ensure the plugin folder is writable by the web server to allow the creation of the <code>db.db</code> file.</li>
+            <li>Other issues: check your server's PHP error logs.</li>
+         </ul>
+
+        <h2>Contributions and Support</h2>
+        <p>For support or to contribute to the project, visit <a href="https://newcodebyte.altervista.org" target="_blank" rel="noopener">https://newcodebyte.altervista.org</a>.</p>
+
+        <div class="footer">
+            <p>Thank you for choosing <b>Chatbot AI Free Models!</b></p>
+        </div>
+    </div>
+</body>
+</html>

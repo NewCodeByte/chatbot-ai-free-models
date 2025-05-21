@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida all'Installazione - Chatbot AI Free Models</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333; /* Colore testo base scuro */
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #007bff; /* Blu primario */
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5em;
+            font-size: 2.2em;
+        }
+        h2 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.3em;
+            font-size: 1.8em;
+        }
+        h3 {
+            font-size: 1.4em;
+            color: #17a2b8; /* Blu-verde per sottotitoli */
+        }
+        p, li {
+            font-size: 1em;
+            margin-bottom: 0.7em;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        /* --- CSS CORRETTO PER CODE E PRE --- */
+        code {
+            background-color: #e9ecef; /* Sfondo grigio chiaro */
+            padding: 3px 6px; /* Leggermente più padding */
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 0.9em;
+            color: #333; /* Colore testo scuro, ben contrastato con lo sfondo */
+        }
+        pre {
+            background-color: #e9ecef; /* Sfondo grigio chiaro */
+            padding: 15px;
+            border: 1px solid #ddd; /* Aggiunto bordo leggero */
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #333; /* Colore testo base scuro per il blocco */
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; /* Assicura font monospace */
+            font-size: 0.9em; /* Dimensione coerente */
+            line-height: 1.5; /* Migliora leggibilità blocchi */
+        }
+        /* Stile specifico per 'code' DENTRO 'pre' */
+        pre code {
+            background-color: transparent; /* Sfondo trasparente per ereditare quello di 'pre' */
+            padding: 0; /* Nessun padding extra */
+            border-radius: 0; /* Nessun bordo arrotondato extra */
+            border: none; /* Nessun bordo extra */
+            color: inherit; /* Eredita il colore da 'pre' (che è #333) */
+            font-size: inherit; /* Eredita la dimensione da 'pre' */
+        }
+        /* --- FINE CSS CORRETTO --- */
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .alert-info {
+            color: #0c5460;
+            background-color: #d1ecf1;
+            border-color: #bee5eb;
+        }
+        .alert-warning {
+            color: #856404;
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+        }
+        .alert-danger {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .credentials-removed { /* Stile per messaggio setup */
+            background-color: #e3f2fd;
+            border-left: 5px solid #17a2b8;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chatbot AI Free Models</h1>
+
+        <p class="alert alert-info">Grazie per aver scelto <b>Chatbot AI Free Models!</b> Questo chatbot ti permette di integrare un assistente virtuale personalizzabile nel tuo sito web, utilizzando modelli AI disponibili gratuitamente tramite OpenRouter.ai.</p>
+
+        <h2>Caratteristiche Principali</h2>
+        <ul>
+            <li><strong>Facile Integrazione:</strong> Aggiungi il chatbot a qualsiasi sito web con una singola riga di JavaScript.</li>
+            <li><strong>Pannello di Amministrazione Sicuro:</strong> Un'interfaccia completa per configurare aspetto, comportamento, base di conoscenza, API, ecc., protetta da login.</li>
+            <li><strong>Setup Guidato:</strong> Creazione sicura dell'account amministratore al primo accesso.</li>
+            <li><strong>Password Sicure:</strong> Le password admin vengono memorizzate utilizzando hashing moderno (non in chiaro).</li>
+            <li><strong>Personalizzabile:</strong> Modifica colori, icone, titolo, messaggio di benvenuto.</li>
+            <li><strong>Flessibile:</strong> Definisci la base di conoscenza e le regole di comportamento del bot.</li>
+            <li><strong>Memoria Conversazionale:</strong> Il bot può ricordare i messaggi precedenti all'interno di una sessione.</li>
+            <li><strong>Supporto Multilingua:</strong> L'interfaccia del pannello admin e di login/setup è traducibile.</li>
+            <li><strong>OpenRouter.ai Ready:</strong> Preconfigurato per usare i modelli di OpenRouter.ai.</li>
+        </ul>
+
+        <h2>Installazione Rapida</h2>
+        <ol>
+            <li>
+                <h3>Carica i File</h3>
+                <p>Decomprimi l'archivio e carica l'intera cartella del chatbot (es. <code>chatbot-x/</code>) sul tuo server web in una posizione accessibile via URL.</p>
+            </li>
+            <li>
+                <h3>Permessi Cartelle e File</h3>
+                <p>Assicurati che il server web abbia i permessi di scrittura per:</p>
+                <ul>
+                    <li>La cartella principale del chatbot (per creare e scrivere sul file database <code>db.db</code>).</li>
+                    <li>La sottocartella <code>images/</code> (per l'upload di icone/loghi).</li>
+                    <li>La sottocartella <code>sounds/</code> (per l'upload del suono di notifica).</li>
+                </ul>
+                <p class="alert alert-warning">Verifica che il file <code>db.db</code>, una volta creato, sia anch'esso scrivibile dal processo del server web.</p>
+            </li>
+            <li>
+                <h3>Primo Accesso e Setup Admin</h3>
+                <p>Apri il tuo browser e naviga alla pagina di login: <code>http://tuosito.com/percorso_del_chatbot/login.php</code>.</p>
+                <div class="credentials-removed">
+                    <p>Al primo accesso, il sistema rileverà che non esiste un amministratore e ti presenterà un <strong>modulo di registrazione</strong>.</p>
+                    <p>Inserisci un <strong>Nome Utente Admin</strong> e una <strong>Password sicura</strong> (e confermala) per creare il tuo account. Questo account verrà salvato nel database <code>db.db</code> con la password protetta da hash.</p>
+                </div>
+                <p>Dopo aver creato l'account, verrai reindirizzato (o potrai accedere) alla normale pagina di login.</p>
+            </li>
+            <li>
+                <h3>Accesso al Pannello Admin</h3>
+                 <p>Una volta creato l'account, accedi a <code>http://tuosito.com/percorso_del_chatbot/login.php</code> usando le credenziali che hai appena definito.</p>
+                 <p>Dopo il login, sarai reindirizzato al Pannello di Controllo (<code>admin.php</code>).</p>
+            </li>
+            <li>
+                <h3>Configurazione Iniziale</h3>
+                <p>Dentro il Pannello di Controllo:</p>
+                <ul>
+                    <li>Vai alla tab <strong>Impostazioni</strong>.</li>
+                    <li>Inserisci la tua <strong>API Key</strong> di <a href="https://openrouter.ai/" target="_blank" rel="noopener">OpenRouter.ai</a>.</li>
+                    <li>Seleziona un <strong>Modello AI</strong> (molti modelli gratuiti sono disponibili).</li>
+                    <li>Personalizza la <strong>Base di Conoscenza</strong> e le <strong>Regole di Comportamento</strong>. Consulta la <strong>Tab Guida</strong> nel pannello per template e suggerimenti.</li>
+                    <li>Esplora le altre tab (Stile, Immagini, Suoni) per personalizzare ulteriormente.</li>
+                    <li>Seleziona la <strong>Lingua Interfaccia</strong> desiderata.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Integra nel Tuo Sito</h3>
+                <p>Copia la riga di script fornita nella <strong>Tab Guida</strong> del pannello admin. Dovrebbe essere simile a:</p>
+                <pre><code>&lt;script src="/percorso_del_chatbot/embed.js" defer>&lt;/script&gt;</code></pre>
+                <p>Incolla questa riga nelle pagine del tuo sito web dove vuoi che appaia il chatbot, preferibilmente prima della chiusura del tag <code>&lt;/body&gt;</code>. Assicurati che il percorso allo script <code>embed.js</code> sia corretto.</p>
+            </li>
+        </ol>
+
+        <h2>Struttura dei File (Principali)</h2>
+        <ul>
+            <li><code>admin.php</code>: Il pannello di amministrazione.</li>
+            <li><code>chatbot.php</code>: Gestisce la logica e l'interfaccia del chatbot.</li>
+            <li><code>embed.js</code>: Script per l'integrazione nel sito.</li>
+            <li><code>style.css</code>: Fogli di stile.</li>
+            <li><code>admin.js</code> & <code>chatbot.js</code>: Script JavaScript.</li>
+            <li><code>login.php</code>: Pagina di login e setup iniziale.</li>
+            <li><code>export.php</code>: Esportazione messaggi.</li>
+            <li><code>db_init.php</code>: Script di inizializzazione database.</li>
+            <li><code>db.db</code>: Database SQLite (creato al primo avvio).</li>
+            <li><code>/images/</code>: Cartella immagini.</li>
+            <li><code>/sounds/</code>: Cartella suoni.</li>
+            <li><code>/languages/</code>: Cartella traduzioni.</li>
+            <li><code>guida_installazione.html</code>: Questo file di guida.</li>
+        </ul>
+
+        <h2>Sicurezza</h2>
+        <ul>
+            <li><strong>Password Hashing:</strong> Le password sono ora memorizzate in modo sicuro tramite hashing.</li>
+            <li><strong>Protezione Directory:</strong> Considera sempre di proteggere la directory del chatbot o specifici file come <code>admin.php</code> con metodi aggiuntivi (es. <code>.htaccess</code> su server Apache) se desideri un livello di sicurezza superiore, limitando l'accesso solo a determinati IP o richiedendo un'autenticazione HTTP aggiuntiva. L'accesso diretto al database è già protetto dal file .htaccess.</li>
+            <li><strong>Permessi File:</strong> Imposta i permessi al minimo necessario per il funzionamento, garantendo la scrittura solo dove serve (cartella principale per <code>db.db</code>, <code>images/</code>, <code>sounds/</code>).</li>
+        </ul>
+
+        <h2>Risoluzione Problemi</h2>
+        <p>Consulta la sezione "Risoluzione Problemi Comuni" nella <strong>Tab Guida</strong> del pannello di amministrazione.</p>
+         <ul>
+            <li><strong>Errore DB al primo accesso a <code>login.php</code>:</strong> Assicurati che la cartella del plugin sia scrivibile dal server web per permettere la creazione del file <code>db.db</code>.</li>
+            <li>Altri problemi: verifica i log di errore PHP del tuo server.</li>
+         </ul>
+
+        <h2>Contributi e Supporto</h2>
+        <p>Per supporto o per contribuire al progetto, visita <a href="https://newcodebyte.altervista.org" target="_blank" rel="noopener">https://newcodebyte.altervista.org</a>.</p>
+
+        <div class="footer">
+            <p>Grazie per aver scelto <b>Chatbot AI Free Models!</b></p>
+        </div>
+    </div>
+</body>
+</html>
