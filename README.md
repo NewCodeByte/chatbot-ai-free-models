@@ -95,7 +95,7 @@ A self-hostable PHP chatbot application that uses SQLite for data storage and in
 1.  **Download/Clone:**
     *   Download the latest release or clone the repository:
         ```bash
-        git clone https://github.com/your-username/your-repo-name.git chatbot
+        git clone https://github.com/NewCodeByte/chatbot-ai-free-models.git chatbot
         ```
     *   Place the `chatbot` folder into your web server's document root (e.g., `/var/www/html/chatbot` or `htdocs/chatbot`).
 
