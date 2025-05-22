@@ -198,4 +198,4 @@ Ecco alcune schermate principali del chatbot e del pannello di controllo:
 ![Stile Personalizzabile](screenshots/Screenshot 6.png)
 ![Gestione Immagini](screenshots/Screenshot 7.png)
 ![Suoni Personalizzati](screenshots/Screenshot 8.png)
-![Guida Integrata](screenshots/Screenshot 9.ng)
+![Guida Integrata](screenshots/Screenshot 9.png)
