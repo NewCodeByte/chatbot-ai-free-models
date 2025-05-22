@@ -185,3 +185,17 @@ Contributions are welcome! If you'd like to contribute, please:
 3.  Make your changes.
 4.  Test thoroughly.
 5.  Submit a pull request with a clear description of your changes.
+
+## Demo e Screenshot
+
+Ecco alcune schermate principali del chatbot e del pannello di controllo:
+
+![Widget Integrato](screenshots/Screenshot 1.png)
+![Login Admin](screenshots/Screenshot 2.png)
+![Dashboard Admin](screenshots/Screenshot 3.png)
+![Impostazioni Generali](screenshots/Screenshot 4.png)
+![Gestione Messaggi](screenshots/Screenshot 5.png)
+![Stile Personalizzabile](screenshots/Screenshot 6.png)
+![Gestione Immagini](screenshots/Screenshot 7.png)
+![Suoni Personalizzati](screenshots/Screenshot 8.png)
+![Guida Integrata](screenshots/Screenshot 9.ng)
