@@ -1,1 +1,0 @@
-C:\wamp64\www\chatbot-x>xgettext --from-code=UTF-8 --package-name="Chatbot AI Free Models" --package-version="1.0" --msgid-bugs-address="tua-email@esempio.com" --copyright-holder="Tuo Nome o Azienda" --add-comments=TRANSLATORS: -k__ --force-po -o chatbot.pot admin.php chatbot.php export.php login.php admin.js chatbot.js embed.js
