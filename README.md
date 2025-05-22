@@ -190,7 +190,7 @@ Contributions are welcome! If you'd like to contribute, please:
 
 Ecco alcune schermate principali del chatbot e del pannello di controllo:
 
-![Widget Integrato](screenshots/Screenshot 1.png)
+![Widget Integrato](Screenshots/Screenshot 1.png)
 ![Login Admin](screenshots/Screenshot 2.png)
 ![Dashboard Admin](screenshots/Screenshot 3.png)
 ![Impostazioni Generali](screenshots/Screenshot 4.png)
