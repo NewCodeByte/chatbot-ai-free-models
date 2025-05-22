@@ -188,14 +188,14 @@ Contributions are welcome! If you'd like to contribute, please:
 
 ## Demo e Screenshot
 
-Ecco alcune schermate principali del chatbot e del pannello di controllo:
+Here are some main screenshots of the chatbot and the admin panel:
 
-![Widget Integrato](Screenshots/Screenshot 1.png)
-![Login Admin](screenshots/Screenshot 2.png)
-![Dashboard Admin](screenshots/Screenshot 3.png)
-![Impostazioni Generali](screenshots/Screenshot 4.png)
-![Gestione Messaggi](screenshots/Screenshot 5.png)
-![Stile Personalizzabile](screenshots/Screenshot 6.png)
-![Gestione Immagini](screenshots/Screenshot 7.png)
-![Suoni Personalizzati](screenshots/Screenshot 8.png)
-![Guida Integrata](screenshots/Screenshot 9.png)
+![Widget Integrato](Screenshots/Screenshot%201.png)
+![Login Admin](Screenshots/Screenshot%202.png)
+![Dashboard Admin](Screenshots/Screenshot%203.png)
+![Impostazioni Generali](Screenshots/Screenshot%204.png)
+![Gestione Messaggi](Screenshots/Screenshot%205.png)
+![Stile Personalizzabile](Screenshots/Screenshot%206.png)
+![Gestione Immagini](Screenshots/Screenshot%207.png)
+![Suoni Personalizzati](Screenshots/Screenshot%208.png)
+![Guida Integrata](Screenshots/Screenshot%209.png)
