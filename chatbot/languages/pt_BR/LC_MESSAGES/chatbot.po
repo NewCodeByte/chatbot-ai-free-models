@@ -1,0 +1,730 @@
+# Brazilian Portuguese translation for Chatbot AI Free Models
+# Copyright (C) YEAR Tuo Nome o Azienda
+# This file is distributed under the same license as the Chatbot AI Free Models package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Chatbot AI Free Models 1.0\n"
+"Report-Msgid-Bugs-To: tua-email@esempio.com\n"
+"POT-Creation-Date: 2025-05-08 17:11+0200\n"
+"PO-Revision-Date: 2025-05-08 17:54+0200\n"
+"Last-Translator: NewCodeByte AI\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: admin.php\n"
+"X-Poedit-SearchPath-2: chatbot.php\n"
+"X-Poedit-SearchPath-3: login.php\n"
+
+#: admin.php:359 admin.php:369
+msgid "Pannello di Controllo"
+msgstr "Painel de Controle"
+
+#: admin.php:367
+msgid "Logout"
+msgstr "Sair"
+
+#: admin.php:371
+msgid "Impostazioni"
+msgstr "Configurações"
+
+#: admin.php:372
+msgid "Messaggi"
+msgstr "Mensagens"
+
+#: admin.php:373
+msgid "Stile"
+msgstr "Estilo"
+
+#: admin.php:374
+msgid "Immagini"
+msgstr "Imagens"
+
+#: admin.php:375
+msgid "Suoni"
+msgstr "Sons"
+
+#: admin.php:376
+msgid "Guida"
+msgstr "Guia"
+
+#: admin.php:377
+msgid "Licenza"
+msgstr "Licença"
+
+#: admin.php:382
+msgid "Impostazioni Chatbot"
+msgstr "Configurações do Chatbot"
+
+#: admin.php:384
+msgid "Lingua Interfaccia"
+msgstr "Idioma da Interface"
+
+#: admin.php:394 admin.php:451
+msgid "Titolo Finestra"
+msgstr "Título da Janela"
+
+#: admin.php:394
+msgid "Chatbot AI Free Models"
+msgstr "Chatbot IA Modelos Gratuitos"
+
+#: admin.php:395
+msgid "Messaggio di Benvenuto"
+msgstr "Mensagem de Boas-vindas"
+
+#: admin.php:395
+msgid "Ciao! Come posso aiutarti?"
+msgstr "Olá! Como posso ajudar você?"
+
+#: admin.php:396
+msgid "Provider API"
+msgstr "Provedor da API"
+
+#: admin.php:396
+msgid "Ottieni la tua API Key (gratis per modelli free)"
+msgstr "Obtenha sua chave de API (grátis para modelos gratuitos)"
+
+#: admin.php:397
+msgid "API Key"
+msgstr "Chave de API"
+
+#: admin.php:397
+msgid "Inserisci la tua API Key qui"
+msgstr "Insira sua chave de API aqui"
+
+#: admin.php:398
+msgid "Modello AI"
+msgstr "Modelo de IA"
+
+#: admin.php:398 admin.php:419
+msgid "Caricamento..."
+msgstr "Carregando..."
+
+#: admin.php:398
+msgid "Consigliati (Free): Google Gemini Flash, Gemma 3, DeepSeek, Qwen 3, LLama 4 ecc."
+msgstr "Recomendados (Grátis): Google Gemini Flash, Gemma 3, DeepSeek, Qwen 3, LLama 4 etc."
+
+#: admin.php:399
+msgid "Base di Conoscenza"
+msgstr "Base de Conhecimento"
+
+#: admin.php:399 admin.php:400
+msgid "Consultare la sezione Guida per suggerimenti e struttura consigliata."
+msgstr "Consulte a seção Guia para sugestões e estrutura recomendada."
+
+#: admin.php:400
+msgid "Regole di Comportamento"
+msgstr "Regras de Comportamento"
+
+#: admin.php:401 admin.php:410 admin.php:452 admin.php:466 admin.php:494
+msgid "Salva Impostazioni"
+msgstr "Salvar Configurações"
+
+#: admin.php:407
+msgid "Gestione Messaggi"
+msgstr "Gerenciamento de Mensagens"
+
+#: admin.php:408
+msgid "Salva conversazioni"
+msgstr "Salvar conversas"
+
+#: admin.php:411
+msgid "Elimina Messaggi"
+msgstr "Excluir Mensagens"
+
+#: admin.php:413
+msgid "Esporta:"
+msgstr "Exportar:"
+
+#: admin.php:415
+msgid "Esporta"
+msgstr "Exportar"
+
+#: admin.php:419
+msgid "Conversazioni"
+msgstr "Conversas"
+
+#: admin.php:424
+msgid "Personalizzazione Stile"
+msgstr "Personalização de Estilo"
+
+#: admin.php:428
+msgid "Header"
+msgstr "Cabeçalho"
+
+#: admin.php:429 admin.php:433 admin.php:436 admin.php:442 admin.php:446
+msgid "Sfondo"
+msgstr "Fundo"
+
+#: admin.php:430 admin.php:437 admin.php:443 admin.php:447
+msgid "Testo"
+msgstr "Texto"
+
+#: admin.php:432
+msgid "Area Messaggi"
+msgstr "Área de Mensagens"
+
+#: admin.php:435
+msgid "Pulsante Invia"
+msgstr "Botão Enviar"
+
+#: admin.php:441
+msgid "Messaggi Utente"
+msgstr "Mensagens do Usuário"
+
+#: admin.php:445
+msgid "Messaggi Bot"
+msgstr "Mensagens do Bot"
+
+#: admin.php:451
+msgid "Anteprima"
+msgstr "Pré-visualização"
+
+#: admin.php:451
+msgid "Questo è un messaggio di esempio inviato dall'utente."
+msgstr "Esta é uma mensagem de exemplo enviada pelo usuário."
+
+#: admin.php:451
+msgid "Questa è una risposta di esempio generata dal bot."
+msgstr "Esta é uma resposta de exemplo gerada pelo bot."
+
+#: admin.php:451 chatbot.php:390
+msgid "Scrivi un messaggio..."
+msgstr "Escreva uma mensagem..."
+
+#: admin.php:451 chatbot.php:391
+msgid "Invia"
+msgstr "Enviar"
+
+#: admin.php:459
+msgid "Gestione Immagini"
+msgstr "Gerenciamento de Imagens"
+
+#: admin.php:460
+msgid "Carica immagini JPG, PNG, GIF (Max 2MB / 512x512 pixel). Le immagini verranno sovrascritte al termine del caricamento e non sarà necessario salvare."
+msgstr "Carregue imagens JPG, PNG, GIF (Máx 2MB / 512x512 pixels). As imagens serão sobrescritas ao final do carregamento e não será necessário salvar."
+
+#: admin.php:461
+msgid "Icona Aperta"
+msgstr "Ícone Aberto"
+
+#: admin.php:461 admin.php:462 admin.php:463 admin.php:464 admin.php:465
+msgid "Carica"
+msgstr "Carregar"
+
+#: admin.php:462
+msgid "Icona Chiusa"
+msgstr "Ícone Fechado"
+
+#: admin.php:463
+msgid "Avatar Bot"
+msgstr "Avatar do Bot"
+
+#: admin.php:464
+msgid "Avatar Utente"
+msgstr "Avatar do Usuário"
+
+#: admin.php:465
+msgid "Logo Aziendale"
+msgstr "Logo da Empresa"
+
+#: admin.php:465
+msgid "Mostra logo"
+msgstr "Mostrar logo"
+
+#: admin.php:472
+msgid "Gestione Suono di Notifica"
+msgstr "Gerenciamento do Som de Notificação"
+
+#: admin.php:473
+msgid "Cambia il suono MP3 (Max 2MB) per l'apertura della chat. Il file MP3 in uso sarà sovrascritto al termine del caricamento e non sarà necessario salvare."
+msgstr "Altere o som MP3 (Máx 2MB) para a abertura do chat. O arquivo MP3 em uso será sobrescrito ao final do carregamento e não será necessário salvar."
+
+#: admin.php:477
+msgid "Suono di Notifica:"
+msgstr "Som de Notificação:"
+
+#: admin.php:480
+msgid "Abilita suono di notifica"
+msgstr "Habilitar som de notificação"
+
+#: admin.php:485
+msgid "Suono Attuale:"
+msgstr "Som Atual:"
+
+#: admin.php:486
+msgid "No supporto audio."
+msgstr "Sem suporte a áudio."
+
+#: admin.php:486
+msgid "File non trovato!"
+msgstr "Arquivo não encontrado!"
+
+#: admin.php:489
+msgid "Carica Nuovo:"
+msgstr "Carregar Novo:"
+
+#: admin.php:491
+msgid "Carica MP3..."
+msgstr "Carregar MP3..."
+
+#: admin.php:492
+msgid "(Max 2MB)"
+msgstr "(Máx 2MB)"
+
+#: admin.php:494
+msgid "Upload automatico"
+msgstr "Upload automático"
+
+#: admin.php:501
+msgid "Guida Rapida e Integrazione"
+msgstr "Guia Rápido e Integração"
+
+#: admin.php:503
+msgid "Come Inserire la Chat nel Tuo Sito Web"
+msgstr "Como Inserir o Chat no Seu Site"
+
+#: admin.php:504
+msgid ""
+"Per aggiungere questo chatbot a qualsiasi pagina del tuo sito web (indipendentemente dalla piattaforma: HTML statico, PHP, CMS diversi da WordPress, ecc.), devi includere un singolo script JavaScript nel codice HTML della pagina, preferibilmente prima della chiusura del tag </body>. Per Wordpress puoi "
+"facilmente installare il plugin di queso Chatbot che trovi qui:"
+msgstr ""
+"Para adicionar este chatbot a qualquer página do seu site (independente da plataforma: HTML estático, PHP, CMS diferentes do WordPress, etc.), você deve incluir um único script JavaScript no código HTML da página, de preferência antes da tag de fechamento </body>. Para Wordpress você pode facilmente instalar "
+"o plugin deste Chatbot encontrado aqui:"
+
+#: admin.php:505
+msgid "Copia e incolla la seguente riga di codice nella tua pagina HTML:"
+msgstr "Copie e cole a seguinte linha de código na sua página HTML:"
+
+#: admin.php:506
+msgid "<script src=\"/percorso/alla/cartella/chatbot/embed.js\" defer></script>"
+msgstr "<script src=\"/caminho/para/pasta/chatbot/embed.js\" defer></script>"
+
+#: admin.php:507
+msgid "Importante:"
+msgstr "Importante:"
+
+#: admin.php:509
+msgid "Sostituisci \"/percorso/alla/cartella/chatbot/\" con il percorso URL effettivo in cui hai caricato la cartella contenente i file del chatbot (chatbot.php, embed.js, style.css, ecc.) sul tuo server."
+msgstr "Substitua \"/caminho/para/pasta/chatbot/\" pelo caminho URL real onde você carregou a pasta contendo os arquivos do chatbot (chatbot.php, embed.js, style.css, etc.) no seu servidor."
+
+#: admin.php:510
+msgid "Ad esempio, potrebbe essere \"/chatbot-x/\" o semplicemente \"/\" se è nella root."
+msgstr "Por exemplo, pode ser \"/chatbot-x/\" ou simplesmente \"/\" se estiver na raiz."
+
+#: admin.php:511
+msgid "L'attributo `defer` è consigliato perché permette alla pagina HTML di caricarsi prima di eseguire lo script, migliorando le prestazioni percepite."
+msgstr "O atributo `defer` é recomendado porque permite que a página HTML carregue antes de executar o script, melhorando o desempenho percebido."
+
+#: admin.php:513
+msgid "Una volta aggiunto questo script, il file `embed.js` creerà automaticamente il pulsante flottante e la finestra della chat (in un iframe) sulla pagina. Il chatbot userà le impostazioni e gli stili definiti in questo pannello di amministrazione."
+msgstr "Uma vez adicionado este script, o arquivo `embed.js` criará automaticamente o botão flutuante e a janela do chat (em um iframe) na página. O chatbot usará as configurações e estilos definidos neste painel de administração."
+
+#: admin.php:515
+msgid "Funzionamento Base"
+msgstr "Funcionamento Básico"
+
+#: admin.php:516
+msgid ""
+"Il chatbot utilizza le informazioni inserite in \"Base di Conoscenza\" e le \"Regole di Comportamento\" per costruire un prompt di sistema. Questo prompt viene inviato, insieme alla cronologia della conversazione corrente (se abilitata e funzionante) e al messaggio dell'utente, all'API di OpenRouter.ai per "
+"generare una risposta. Assicurati di avere una API Key valida e di selezionare un modello compatibile."
+msgstr ""
+"O chatbot utiliza as informações inseridas na \"Base de Conhecimento\" e nas \"Regras de Comportamento\" para construir um prompt de sistema. Este prompt é enviado, juntamente com o histórico da conversa atual (se ativado e funcional) e a mensagem do usuário, para a API da OpenRouter.ai para gerar uma "
+"resposta. Certifique-se de ter uma Chave de API válida e de selecionar um modelo compatível."
+
+#: admin.php:521
+msgid "Template Suggeriti per Impostazioni"
+msgstr "Modelos Sugeridos para Configurações"
+
+#: admin.php:522
+msgid "Puoi usare i seguenti testi come punto di partenza. Copiali e incollali nei campi corrispondenti nella tab \"Impostazioni\", adattandoli poi alle tue specifiche esigenze."
+msgstr "Você pode usar os textos a seguir como ponto de partida. Copie e cole-os nos campos correspondentes na aba \"Configurações\", adaptando-os depois às suas necessidades específicas."
+
+#: admin.php:523
+msgid "Template Base di Conoscenza"
+msgstr "Modelo Base de Conhecimento"
+
+#: admin.php:525
+msgid "Informazioni Essenziali sul Tuo Sito/Blog:"
+msgstr "Informações Essenciais sobre Seu Site/Blog:"
+
+#: admin.php:527
+msgid "Nome del Sito:"
+msgstr "Nome do Site:"
+
+#: admin.php:527
+msgid "[Inserisci il nome del tuo sito/blog qui]"
+msgstr "[Insira o nome do seu site/blog aqui]"
+
+#: admin.php:528
+msgid "Argomento Principale:"
+msgstr "Tópico Principal:"
+
+#: admin.php:528
+msgid "[Descrivi brevemente di cosa tratta il tuo sito. Es: Blog di cucina vegetariana, Sito di recensioni tech, E-commerce di prodotti artigianali]"
+msgstr "[Descreva brevemente sobre o que é seu site. Ex: Blog de culinária vegetariana, Site de reviews de tecnologia, E-commerce de produtos artesanais]"
+
+#: admin.php:529
+msgid "Obiettivo del Sito:"
+msgstr "Objetivo do Site:"
+
+#: admin.php:529
+msgid "[Qual è lo scopo principale? Es: Informare, Vendere prodotti, Offrire servizi, Creare una community]"
+msgstr "[Qual é o objetivo principal? Ex: Informar, Vender produtos, Oferecer serviços, Criar uma comunidade]"
+
+#: admin.php:530
+msgid "Pubblico di Riferimento:"
+msgstr "Público-Alvo:"
+
+#: admin.php:530
+msgid "[A chi ti rivolgi principalmente? Es: Principianti di cucina, Appassionati di tecnologia, Amanti del fai-da-te]"
+msgstr "[Para quem você se dirige principalmente? Ex: Iniciantes na cozinha, Entusiastas de tecnologia, Amantes de DIY]"
+
+#: admin.php:531
+msgid "Prodotti/Servizi Chiave (se applicabile):"
+msgstr "Produtos/Serviços Principais (se aplicável):"
+
+#: admin.php:531
+msgid "[Elenca brevemente i tuoi prodotti o servizi principali. Es: Corsi di cucina online, Guide all'acquisto smartphone, Oggetti in ceramica fatti a mano]"
+msgstr "[Liste brevemente seus principais produtos ou serviços. Ex: Cursos de culinária online, Guias de compra de smartphones, Itens de cerâmica feitos à mão]"
+
+#: admin.php:532
+msgid "Contatti:"
+msgstr "Contato:"
+
+#: admin.php:532
+msgid "[Come possono contattarti gli utenti? Es: Pagina Contatti sul sito, Email: tua@email.com, Numero di telefono (se appropriato)]"
+msgstr "[Como os usuários podem entrar em contato com você? Ex: Página de Contato no site, Email: seu@email.com, Número de telefone (se apropriado)]"
+
+#: admin.php:533
+msgid "Informazioni Uniche/Importanti:"
+msgstr "Informações Únicas/Importantes:"
+
+#: admin.php:533
+msgid "[Ci sono regole specifiche, orari, valori aziendali o informazioni particolari che il bot deve conoscere? Es: Spedizioni solo in Italia, Non trattiamo argomenti X, Siamo aperti dal Lunedì al Venerdì 9-18]"
+msgstr "[Existem regras específicas, horários, valores da empresa ou informações particulares que o bot precisa saber? Ex: Envios apenas no Brasil, Não abordamos o tópico X, Estamos abertos de Segunda a Sexta das 9h às 18h]"
+
+#: admin.php:535
+msgid "(SUGGERIMENTO: Sii specifico ma conciso. Più informazioni rilevanti fornisci, migliori saranno le risposte del bot. Rimuovi le parentesi quadre e sostituisci il testo.)"
+msgstr "(DICA: Seja específico, mas conciso. Quanto mais informações relevantes você fornecer, melhores serão as respostas do bot. Remova os colchetes e substitua o texto.)"
+
+#: admin.php:538
+msgid "Template Comportamento del Bot"
+msgstr "Modelo de Comportamento do Bot"
+
+#: admin.php:541
+msgid "Istruzioni per il Comportamento del Bot:"
+msgstr "Instruções para o Comportamento do Bot:"
+
+#: admin.php:543
+msgid "Personalità/Ruolo:"
+msgstr "Personalidade/Papel:"
+
+#: admin.php:543
+msgid "Sei un assistente virtuale amichevole e disponibile per il sito [Nome del Tuo Sito]. Il tuo obiettivo è aiutare gli utenti a trovare informazioni presenti nella \"Base di Conoscenza\" fornita e rispondere alle loro domande in modo chiaro e pertinente."
+msgstr "Você é um assistente virtual amigável e prestativo para o site [Nome do Seu Site]. Seu objetivo é ajudar os usuários a encontrar informações presentes na \"Base de Conhecimento\" fornecida e responder às suas perguntas de forma clara e pertinente."
+
+#: admin.php:544
+msgid "Tono:"
+msgstr "Tom:"
+
+#: admin.php:544
+msgid "Mantieni un tono cordiale, professionale e positivo. Usa un linguaggio semplice e comprensibile."
+msgstr "Mantenha um tom cordial, profissional e positivo. Use uma linguagem simples e compreensível."
+
+#: admin.php:545
+msgid "Stile:"
+msgstr "Estilo:"
+
+#: admin.php:545
+msgid "Rispondi in modo diretto e vai dritto al punto, ma senza sembrare sbrigativo. Usa paragrafi brevi e, se appropriato, elenchi puntati per migliorare la leggibilità. Dai del \"tu\" all'utente."
+msgstr "Responda diretamente e vá direto ao ponto, mas sem parecer apressado. Use parágrafos curtos e, se apropriado, listas com marcadores para melhorar a legibilidade. Trate o usuário por \"você\"."
+
+#: admin.php:546
+msgid "Base di Conoscenza:"
+msgstr "Base de Conhecimento:"
+
+#: admin.php:546
+msgid ""
+"Basa le tue risposte ESCLUSIVAMENTE sulle informazioni fornite nella sezione \"Informazioni per le risposte\". Se una domanda riguarda argomenti non presenti lì, indica gentilmente che non hai quell'informazione specifica e suggerisci come l'utente può trovarla (es. \"Non ho dettagli su questo argomento "
+"specifico, ma potresti trovare utile visitare la nostra pagina [Nome Pagina Rilevante] o contattarci direttamente tramite [Metodo di Contatto]\")."
+msgstr ""
+"Baseie suas respostas EXCLUSIVAMENTE nas informações fornecidas na seção \"Base de Conhecimento\". Se uma pergunta for sobre tópicos não presentes lá, indique gentilmente que você não possui essa informação específica e sugira como o usuário pode encontrá-la (ex: \"Não tenho detalhes sobre este tópico "
+"específico, mas você pode achar útil visitar nossa página [Nome da Página Relevante] ou entrar em contato conosco diretamente via [Método de Contato]\")."
+
+#: admin.php:547
+msgid "Cosa NON Fare:"
+msgstr "O que NÃO Fazer:"
+
+#: admin.php:549
+msgid "Non inventare informazioni o risposte."
+msgstr "Não invente informações ou respostas."
+
+#: admin.php:550
+msgid "Non esprimere opinioni personali."
+msgstr "Não expresse opiniões pessoais."
+
+#: admin.php:551
+msgid "Non rispondere a domande offensive, inappropriate o palesemente fuori tema rispetto allo scopo del sito. In questi casi, rispondi educatamente che non puoi gestire quel tipo di richiesta."
+msgstr "Não responda a perguntas ofensivas, inapropriadas ou claramente fora de tópico em relação ao propósito do site. Nesses casos, responda educadamente que você não pode lidar com esse tipo de solicitação."
+
+#: admin.php:552
+msgid "Non chiedere informazioni personali sensibili agli utenti (password, numeri di carta di credito, ecc.)."
+msgstr "Não peça informações pessoais sensíveis aos usuários (senhas, números de cartão de crédito, etc.)."
+
+#: admin.php:555
+msgid "Gestione Domande Complesse/Ambigue:"
+msgstr "Gerenciamento de Perguntas Complexas/Ambíguas:"
+
+#: admin.php:555
+msgid "Se una domanda non è chiara, chiedi gentilmente all'utente di riformularla o fornire maggiori dettagli."
+msgstr "Se uma pergunta não estiver clara, peça gentilmente ao usuário para reformulá-la ou fornecer mais detalhes."
+
+#: admin.php:556
+msgid "Lingua:"
+msgstr "Idioma:"
+
+#: admin.php:556
+msgid "Rispondi sempre in italiano, a meno che l'utente non scriva chiaramente in un'altra lingua (in quel caso, se possibile, rispondi in quella lingua mantenendo queste regole)."
+msgstr "Responda sempre em português, a menos que o usuário escreva claramente em outro idioma (nesse caso, se possível, responda nesse idioma mantendo estas regras)."
+
+#: admin.php:558
+msgid "(SUGGERIMENTO: Adatta queste regole al tuo caso specifico. Puoi renderlo più formale, più tecnico, più spiritoso, ecc. Ricorda di sostituire \"[Nome del Tuo Sito]\" e \"[Metodo di Contatto]\")."
+msgstr "(DICA: Adapte estas regras ao seu caso específico. Você pode torná-lo mais formal, mais técnico, mais espirituoso, etc. Lembre-se de substituir \"[Nome do Seu Site]\" e \"[Método de Contato]\")."
+
+#: admin.php:562
+msgid "Risoluzione Problemi Comuni"
+msgstr "Solução de Problemas Comuns"
+
+#: admin.php:564
+msgid "Il chatbot non appare sulla pagina:"
+msgstr "O chatbot não aparece na página:"
+
+#: admin.php:564
+msgid "Verifica che il percorso nello script `<script src=\"...\">` sia corretto e che il file `embed.js` sia caricato correttamente (controlla la console del browser per errori 404). Assicurati che non ci siano errori JavaScript gravi nella console che potrebbero bloccare l'esecuzione di `embed.js`."
+msgstr "Verifique se o caminho no script `<script src=\"...\">` está correto e se o arquivo `embed.js` foi carregado corretamente (verifique o console do navegador por erros 404). Certifique-se de que não há erros graves de JavaScript no console que possam bloquear a execução de `embed.js`."
+
+#: admin.php:565
+msgid "Il chatbot non risponde:"
+msgstr "O chatbot não responde:"
+
+#: admin.php:565
+msgid ""
+"Verifica che l'API Key sia corretta, che il modello selezionato sia valido e attivo su OpenRouter, e che il tuo account OpenRouter abbia crediti sufficienti (se usi modelli a pagamento). Controlla la console del browser (tasto F12) per eventuali errori JavaScript durante l'invio del messaggio. Controlla i log "
+"di errore PHP del server per problemi in `chatbot.php`."
+msgstr ""
+"Verifique se a Chave de API está correta, se o modelo selecionado é válido e está ativo no OpenRouter, e se sua conta OpenRouter tem créditos suficientes (se usar modelos pagos). Verifique o console do navegador (tecla F12) por eventuais erros de JavaScript durante o envio da mensagem. Verifique os logs de "
+"erro do PHP no servidor por problemas em `chatbot.php`."
+
+#: admin.php:566
+msgid "Le immagini/suoni non si aggiornano o non appaiono:"
+msgstr "As imagens/sons não são atualizados ou não aparecem:"
+
+#: admin.php:566
+msgid ""
+"Assicurati che le cartelle `/images` e `/sounds` esistano nella directory del chatbot e abbiano i permessi di scrittura corretti per il server web. Prova a svuotare la cache del browser (hard refresh). Verifica che i percorsi usati in `chatbot.js` e `admin.php` per accedere a queste risorse siano corretti "
+"rispetto alla root del sito."
+msgstr ""
+"Certifique-se de que as pastas `/images` e `/sounds` existam no diretório do chatbot e tenham as permissões de escrita corretas para o servidor web. Tente limpar o cache do navegador (atualização forçada). Verifique se os caminhos usados em `chatbot.js` e `admin.php` para acessar esses recursos estão corretos "
+"em relação à raiz do site."
+
+#: admin.php:567
+msgid "Le modifiche allo stile non appaiono:"
+msgstr "As modificações de estilo não aparecem:"
+
+#: admin.php:567
+msgid "Svuota la cache del browser (hard refresh CTRL+F5 o CMD+SHIFT+R). Verifica che non ci siano regole CSS del tuo sito principale che sovrascrivono gli stili del chatbot con `!important` (anche se l'iframe dovrebbe isolare abbastanza)."
+msgstr "Limpe o cache do navegador (atualização forçada CTRL+F5 ou CMD+SHIFT+R). Verifique se não há regras CSS do seu site principal que sobrescrevam os estilos do chatbot com `!important` (embora o iframe deva isolar o suficiente)."
+
+#: admin.php:568
+msgid "Reset generale:"
+msgstr "Reset geral:"
+
+#: admin.php:568
+msgid "Se per qualsiasi ragione vorresti tornare alle impostazioni di default, ti basterà eliminare il file del database che trovi nella directory principale del chatbot, è l'unico con estensione .db, se hai cambiato immagini e suoni, questi non saranno ripristinati, dovresti ricaricarli."
+msgstr "Se por qualquer motivo você quiser retornar às configurações padrão, basta excluir o arquivo do banco de dados encontrado no diretório principal do chatbot, é o único com extensão .db. Se você alterou imagens e sons, estes não serão restaurados, você precisará carregá-los novamente."
+
+#: admin.php:570
+msgid "Per supporto aggiuntivo, visita il sito dello sviluppatore"
+msgstr "Para suporte adicional, visite o site do desenvolvedor"
+
+#: admin.php:570
+msgid " o consulta la documentazione completa (se disponibile)."
+msgstr " ou consulte a documentação completa (se disponível)."
+
+#: admin.php:577
+msgid "Licenza e Termini di Utilizzo"
+msgstr "Licença e Termos de Uso"
+
+#: admin.php:578
+msgid "Si prega di leggere attentamente i termini sotto cui questo software viene fornito."
+msgstr "Por favor, leia atentamente os termos sob os quais este software é fornecido."
+
+#: admin.php:580
+msgid "Licenza Personalizzata - Uso Gratuito con Link di Attribuzione"
+msgstr "Licença Personalizada - Uso Gratuito com Link de Atribuição"
+
+#: admin.php:582
+msgid "Il permesso è concesso, gratuitamente, a chiunque ottenga una copia di questo software e dei file di documentazione associati (il \"Software\"), di utilizzare, copiare, modificare, unire, pubblicare e distribuire il Software per qualsiasi scopo, inclusi scopi commerciali, alle seguenti condizioni:"
+msgstr ""
+"A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o \"Software\"), para usar, copiar, modificar, mesclar, publicar e distribuir o Software para qualquer finalidade, incluindo fins comerciais, sujeito às seguintes condições:"
+
+#: admin.php:583
+msgid "1. Un link visibile a"
+msgstr "1. Um link visível para"
+
+#: admin.php:583
+msgid "deve essere mantenuto intatto nel footer dell'interfaccia del chatbot in ogni momento."
+msgstr "deve ser mantido intacto no rodapé da interface do chatbot em todos os momentos."
+
+#: admin.php:584
+msgid "2. Il link nel footer può essere rimosso solo dopo una donazione una tantum di almeno $10 USD ("
+msgstr "2. O link no rodapé só pode ser removido após uma doação única de pelo menos US$ 10 ("
+
+#: admin.php:584
+msgid "). La rimozione non autorizzata del link nel footer costituisce una violazione di questa licenza."
+msgstr "). A remoção não autorizada do link no rodapé constitui uma violação desta licença."
+
+#: admin.php:585
+msgid "3. Il Software è fornito \"così com'è\", senza garanzie di alcun tipo, esplicite o implicite. L'autore non sarà responsabile per qualsiasi reclamo, danno o altra responsabilità derivante dall'uso del Software."
+msgstr "3. O Software é fornecido \"como está\", sem garantia de qualquer tipo, expressa ou implícita. O autor não será responsável por quaisquer reclamações, danos ou outras responsabilidades decorrentes do uso do Software."
+
+#: admin.php:586
+msgid "4. Questa licenza deve essere inclusa in tutte le copie o porzioni sostanziali del Software."
+msgstr "4. Esta licença deve ser incluída em todas as cópias ou partes substanciais do Software."
+
+#: admin.php:587
+msgid "Opzionale:"
+msgstr "Opcional:"
+
+#: admin.php:588
+msgid "- Per rimuovere legalmente il link nel footer, visita"
+msgstr "- Para remover legalmente o link no rodapé, visite"
+
+#: admin.php:588
+msgid "o contatta"
+msgstr "ou contate"
+
+#: admin.php:589
+msgid "Grazie per rispettare il lavoro dell'autore."
+msgstr "Obrigado por respeitar o trabalho do autor."
+
+#: admin.php:593
+msgid "Per una copia del testo ufficiale della licenza, fare riferimento al file LICENSE.txt nella directory principale del plugin."
+msgstr "Para uma cópia do texto oficial da licença, consulte o arquivo LICENSE.txt no diretório principal do plugin."
+
+#: admin.php:601
+msgid "Caratteri:"
+msgstr "Caracteres:"
+
+#: admin.php:601
+msgid " / Tokens:"
+msgstr " / Tokens:"
+
+#: chatbot.php:386
+msgid "Chiudi chat"
+msgstr "Fechar chat"
+
+#: chatbot.php:390
+msgid "Input messaggio utente"
+msgstr "Entrada de mensagem do usuário"
+
+#: login.php:139
+msgid "Tutti i campi sono obbligatori per la registrazione."
+msgstr "Todos os campos são obrigatórios para o registro."
+
+#: login.php:141
+msgid "La password deve essere di almeno 6 caratteri."
+msgstr "A senha deve ter pelo menos 6 caracteres."
+
+#: login.php:143
+msgid "Le password non coincidono."
+msgstr "As senhas não coincidem."
+
+#: login.php:151
+msgid "Questo username esiste già. Scegline un altro."
+msgstr "Este nome de usuário já existe. Por favor, escolha outro."
+
+#: login.php:159
+msgid "Account amministratore creato con successo! Ora puoi effettuare il login."
+msgstr "Conta de administrador criada com sucesso! Agora você pode fazer login."
+
+#: login.php:162
+msgid "Errore durante la creazione dell'account:"
+msgstr "Erro ao criar a conta:"
+
+#: login.php:166
+msgid "Errore di preparazione statement:"
+msgstr "Erro na preparação da declaração:"
+
+#: login.php:183
+msgid "Username e Password sono obbligatori."
+msgstr "Nome de usuário e Senha são obrigatórios."
+
+#: login.php:201 login.php:204
+msgid "Username o Password errati."
+msgstr "Nome de usuário ou Senha incorretos."
+
+#: login.php:207
+msgid "Errore di preparazione statement login:"
+msgstr "Erro na preparação da declaração de login:"
+
+#: login.php:232
+msgid "Setup Admin Chatbot"
+msgstr "Configuração Admin Chatbot"
+
+#: login.php:232
+msgid "Login Admin Chatbot"
+msgstr "Login Admin Chatbot"
+
+#: login.php:251
+msgid "Errore Critico"
+msgstr "Erro Crítico"
+
+#: login.php:254
+msgid "Setup Amministratore Chatbot"
+msgstr "Configuração do Administrador do Chatbot"
+
+#: login.php:255
+msgid "Sembra sia la prima volta che configuri l'accesso. Crea il tuo account amministratore."
+msgstr "Parece ser a primeira vez que você configura o acesso. Crie sua conta de administrador."
+
+#: login.php:261
+msgid "Username Admin:"
+msgstr "Nome de Usuário Admin:"
+
+#: login.php:264
+msgid "Password Admin:"
+msgstr "Senha Admin:"
+
+#: login.php:267
+msgid "Conferma Password:"
+msgstr "Confirmar Senha:"
+
+#: login.php:270
+msgid "Crea Account Admin"
+msgstr "Criar Conta Admin"
+
+#: login.php:275
+msgid "Accesso Area Admin Chatbot"
+msgstr "Acesso à Área Admin do Chatbot"
+
+#: login.php:282
+msgid "Username:"
+msgstr "Nome de Usuário:"
+
+#: login.php:285
+msgid "Password:"
+msgstr "Senha:"
+
+#: login.php:288
+msgid "Accedi"
+msgstr "Entrar"
