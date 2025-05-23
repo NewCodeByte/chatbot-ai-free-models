@@ -1,6 +1,6 @@
-# PHP SQLite Chatbot with Admin Panel
+# AI Chatbot with Admin Panel for Any Website
 
-A self-hostable PHP chatbot application that uses SQLite for data storage and integrates with OpenRouter.ai for AI-powered responses. It includes a comprehensive admin panel for configuration, message management, styling, and more.
+A self-hosted AI chatbot for any website. Includes a full admin panel to manage appearance, messages, behavior, and AI settings. Lightweight and easy to install — runs on PHP with SQLite.
 
 ## Features
 
