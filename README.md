@@ -165,7 +165,7 @@ This software is provided under a custom license:
 
 *   **Free to Use:** You can use, copy, modify, merge, publish, and distribute the software for any purpose, including commercial.
 *   **Attribution Required:** A visible link to [https://newcodebyte.altervista.org](https://newcodebyte.altervista.org) must be maintained in the footer of the chatbot interface at all times.
-*   **Link Removal (Optional):** The footer link can be removed only after a one-time donation of at least $10 USD via [Buy Me A Coffee](https://buymeacoffee.com/codebytewp). Unauthorized removal is a license violation.
+*   **Link Removal (Optional):** The footer link can be removed only after a one-time donation of at least $9.90 USD via [Buy Me A Coffee](https://buymeacoffee.com/codebytewp). Unauthorized removal is a license violation.
 *   **No Warranty:** The software is provided "as is" without any warranty. The author is not liable for any claims or damages.
 *   This license notice must be included in all copies or substantial portions of the Software.
 
