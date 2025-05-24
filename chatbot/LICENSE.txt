@@ -8,7 +8,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 1. A visible link to https://newcodebyte.altervista.org must be kept intact in the footer of the chatbot interface at all times.
 
-2. The footer link may only be removed after a one-time donation of at least $10 USD (https://buymeacoffee.com/codebytewp). Unauthorized removal of the footer link is a violation of this license.
+2. The footer link may only be removed after a one-time donation of at least $9.90 USD (https://buymeacoffee.com/codebytewp). Unauthorized removal of the footer link is a violation of this license.
 
 3. The Software is provided "as is", without warranty of any kind, express or implied. The author shall not be liable for any claim, damages or other liability arising from the use of the Software.
 
