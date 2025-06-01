@@ -39,7 +39,7 @@
     const widgetRight = '20px';   // Distanza da destra
     const buttonBottom = '20px';  // Distanza pulsante dal basso
     const buttonRight = '20px';   // Distanza pulsante da destra
-    const buttonSize = '70px';    // Dimensione pulsante
+    const buttonSize = '60px';    // Dimensione pulsante
 
     // --- Stili CSS da iniettare (rimangono invariati) ---
     const styles = `
@@ -54,13 +54,13 @@
             border-radius: 50%;
             padding: 0;
             cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: none;
             z-index: 2147483646 !important;
             overflow: hidden;
             transition: transform 0.2s ease-in-out;
         }
         #chatbot-embed-button:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
         #chatbot-embed-button img {
             display: block;
@@ -68,7 +68,7 @@
             height: 100%;
             object-fit: cover;
             border-radius: 50%;
-            clip-path: circle(45% at center);
+            clip-path: circle(50% at center);
         }
         #chatbot-embed-iframe-container {
             position: fixed;

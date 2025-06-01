@@ -12,6 +12,71 @@ if (!$db) {
      return false;
 }
 
+// --- BLOCCO INTERNAZIONALIZZAZIONE (i18n) ---
+$locale_code = 'en_US.UTF-8'; // Default locale, potrebbe essere sovrascritto dal DB
+$db_i18n_chatbot = null; // Usa una variabile diversa per evitare conflitti se $db è usato dopo
+
+try {
+    $db_path_i18n_chatbot = __DIR__ . '/db.db';
+    if (file_exists($db_path_i18n_chatbot)) {
+        $db_i18n_chatbot = new SQLite3($db_path_i18n_chatbot, SQLITE3_OPEN_READONLY);
+        if ($db_i18n_chatbot) {
+            // Aggiungi un controllo se la tabella settings esiste, per robustezza
+            $tableCheck = $db_i18n_chatbot->querySingle("SELECT name FROM sqlite_master WHERE type='table' AND name='settings'");
+            if ($tableCheck) {
+                $lang_setting = $db_i18n_chatbot->querySingle("SELECT value FROM settings WHERE name = 'language'");
+                if ($lang_setting) {
+                    $locale_map = [
+                        'it'    => 'it_IT.UTF-8',
+                        'en_US' => 'en_US.UTF-8',
+                        'es_ES' => 'es_ES.UTF-8',
+                        'fr_FR' => 'fr_FR.UTF-8',
+                        'de_DE' => 'de_DE.UTF-8',
+                        'pt_BR' => 'pt_BR.UTF-8',
+                    ];
+                    $locale_code = $locale_map[$lang_setting] ?? 'en_US.UTF-8';
+                }
+            } else {
+                 error_log("i18n Chatbot.php: Tabella 'settings' non trovata. Uso default locale: " . $locale_code);
+            }
+            $db_i18n_chatbot->close();
+            $db_i18n_chatbot = null;
+        } else {
+             error_log("i18n Chatbot.php: Impossibile aprire DB per lingua.");
+        }
+    } else {
+         error_log("i18n Chatbot.php: File DB non trovato. Uso default locale: " . $locale_code);
+    }
+} catch (Exception $e) {
+    error_log("Eccezione lettura lingua DB per i18n in Chatbot.php: " . $e->getMessage());
+    if ($db_i18n_chatbot) { $db_i18n_chatbot->close(); $db_i18n_chatbot = null; }
+}
+
+// Imposta la locale per gettext
+$setlocale_result = setlocale(LC_ALL,
+    $locale_code,
+    str_replace('.UTF-8', '.utf8', $locale_code),
+    substr($locale_code, 0, strpos($locale_code, '_'))
+);
+
+if ($setlocale_result === false) {
+    error_log("Attenzione i18n Chatbot.php: setlocale(LC_ALL, ...) fallito per locale base '$locale_code'.");
+}
+
+// Imposta variabili d'ambiente
+putenv('LC_ALL=' . $locale_code);
+putenv('LANG=' . $locale_code);
+putenv('LANGUAGE=' . $locale_code);
+
+// Specifica il percorso e il dominio per gettext
+$languages_directory = __DIR__ . '/languages';
+$text_domain = 'chatbot'; // Assicurati che sia lo stesso dominio usato in admin.php
+
+bindtextdomain($text_domain, $languages_directory);
+bind_textdomain_codeset($text_domain, 'UTF-8');
+textdomain($text_domain);
+// --- FINE BLOCCO i18n ---
+
 // Funzione di localizzazione placeholder se non definita altrove
 if (!function_exists('__')) {
     function __($text) {
@@ -44,36 +109,8 @@ function getSettings($db) {
     if ($result) { while ($row = $result->fetchArray(SQLITE3_ASSOC)) { $settings[$row['name']] = $row['value']; } }
 
     // Testi predefiniti in italiano per fallback
-    $knowledge_base_default_text = <<<TEXT
-**Informazioni Essenziali sul Tuo Sito/Blog:**
-
-*   **Nome del Sito:** [Inserisci il nome del tuo sito/blog qui]
-*   **Argomento Principale:** [Descrivi brevemente di cosa tratta il tuo sito. Es: Blog di cucina vegetariana, Sito di recensioni tech, E-commerce di prodotti artigianali]
-*   **Obiettivo del Sito:** [Qual è lo scopo principale? Es: Informare, Vendere prodotti, Offrire servizi, Creare una community]
-*   **Pubblico di Riferimento:** [A chi ti rivolgi principalmente? Es: Principianti di cucina, Appassionati di tecnologia, Amanti del fai-da-te]
-*   **Prodotti/Servizi Chiave (se applicabile):** [Elenca brevemente i tuoi prodotti o servizi principali. Es: Corsi di cucina online, Guide all'acquisto smartphone, Oggetti in ceramica fatti a mano]
-*   **Contatti:** [Come possono contattarti gli utenti? Es: Pagina Contatti sul sito, Email: tua@email.com, Numero di telefono (se appropriato)]
-*   **Informazioni Uniche/Importanti:** [Ci sono regole specifiche, orari, valori aziendali o informazioni particolari che il bot deve conoscere? Es: Spedizioni solo in Italia, Non trattiamo argomenti X, Siamo aperti dal Lunedì al Venerdì 9-18]
-
-*(SUGGERIMENTO: Sii specifico ma conciso. Più informazioni rilevanti fornisci, migliori saranno le risposte del bot. Rimuovi le parentesi quadre e sostituisci il testo.)*
-TEXT;
-     $bot_rules_default_text = <<<TEXT
-**Istruzioni per il Comportamento del Bot:**
-
-*   **Personalità/Ruolo:** Sei un assistente virtuale amichevole e disponibile per il sito [Nome del Tuo Sito]. Il tuo obiettivo è aiutare gli utenti a trovare informazioni presenti nella "Base di Conoscenza" fornita e rispondere alle loro domande in modo chiaro e pertinente.
-*   **Tono:** Mantieni un tono cordiale, professionale e positivo. Usa un linguaggio semplice e comprensibile.
-*   **Stile:** Rispondi in modo diretto e vai dritto al punto, ma senza sembrare sbrigativo. Usa paragrafi brevi e, se appropriato, elenchi puntati per migliorare la leggibilità. Dai del "tu" all'utente.
-*   **Base di Conoscenza:** Basa le tue risposte ESCLUSIVAMENTE sulle informazioni fornite nella sezione "Informazioni per le risposte". Se una domanda riguarda argomenti non presenti lì, indica gentilmente che non hai quell'informazione specifica e suggerisci come l'utente può trovarla (es. "Non ho dettagli su questo argomento specifico, ma potresti trovare utile visitare la nostra pagina [Nome Pagina Rilevante] o contattarci direttamente tramite [Metodo di Contatto]").
-*   **Cosa NON Fare:**
-    *   Non inventare informazioni o risposte.
-    *   Non esprimere opinioni personali.
-    *   Non rispondere a domande offensive, inappropriate o palesemente fuori tema rispetto allo scopo del sito. In questi casi, rispondi educatamente che non puoi gestire quel tipo di richiesta.
-    *   Non chiedere informazioni personali sensibili agli utenti (password, numeri di carta di credito, ecc.).
-*   **Gestione Domande Complesse/Ambigue:** Se una domanda non è chiara, chiedi gentilmente all'utente di riformularla o fornire maggiori dettagli.
-*   **Lingua:** Rispondi sempre in italiano, a meno che l'utente non scriva chiaramente in un'altra lingua (in quel caso, se possibile, rispondi in quella lingua mantenendo queste regole).
-
-*(SUGGERIMENTO: Adatta queste regole al tuo caso specifico. Puoi renderlo più formale, più tecnico, più spiritoso, ecc. Ricorda di sostituire "[Nome del Tuo Sito]" e "[Metodo di Contatto]").*
-TEXT;
+    $knowledge_base_default_text = '';
+    $bot_rules_default_text = '';
 
     // Applica fallback corretti
     $settings['language'] = $settings['language'] ?? 'it';
@@ -207,11 +244,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         saveConversation($conversationId, 'User', $userMessage);
     }
 
-    // --- Preparazione Dati per API ---
-    $systemPrompt = trim($botRules . "\n\nUsa queste informazioni come base di conoscenza:\n" . $knowledgeBase);
-    if (empty(trim($systemPrompt))) {
-        $systemPrompt = 'Sei un assistente virtuale utile e cordiale.';
-    }
+// --- Preparazione Dati per API ---
+$knowledge_base_intro_string = __("Usa queste informazioni come base di conoscenza:\n"); // Stringa tradotta con newline
+
+$prompt_parts = [];
+if (!empty(trim($botRules))) {
+    $prompt_parts[] = trim($botRules); // Aggiungi le regole se esistono
+}
+
+// Aggiungi l'introduzione e la knowledge base solo se la knowledge base stessa non è vuota.
+if (!empty(trim($knowledgeBase))) {
+    // Combina l'introduzione tradotta con la knowledge base
+    // L'introduzione viene aggiunta solo se c'è effettivamente una knowledge base.
+    $prompt_parts[] = $knowledge_base_intro_string . trim($knowledgeBase);
+}
+
+// Costruisci il systemPrompt finale
+if (!empty($prompt_parts)) {
+    // Unisci le parti con due newline, poi fai un trim finale per pulizia
+    $systemPrompt = trim(implode("\n\n", $prompt_parts));
+} else {
+    // Se non ci sono né regole né knowledge base, il prompt è vuoto e si userà il fallback
+    $systemPrompt = '';
+}
+
+// Fallback se il systemPrompt costruito è ancora vuoto (o lo era dall'inizio)
+if (empty(trim($systemPrompt))) {
+    $systemPrompt = __('Sei un assistente virtuale utile e cordiale.');
+}
+
     $messagesForApi = [];
     $messagesForApi[] = ['role' => 'system', 'content' => $systemPrompt];
     $messagesForApi = array_merge($messagesForApi, $current_session_history); // Usa cronologia da sessione
@@ -361,7 +422,7 @@ function renderChatWidget() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo escape($chatTitle); ?></title>
+    <title><?php echo escape($chatTitle); ?></title>    
     <link rel="stylesheet" href="css/style.css?v=<?php echo file_exists(__DIR__ . 'css/style.css') ? filemtime(__DIR__ . 'css/style.css') : '1'; ?>">
     <style>
       :root {
