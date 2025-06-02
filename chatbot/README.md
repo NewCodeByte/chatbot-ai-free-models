@@ -200,4 +200,3 @@ Here are some main screenshots of the chatbot and the admin panel:
 ![Stile Personalizzabile](Screenshots/Screenshot%206.png)
 ![Gestione Immagini](Screenshots/Screenshot%207.png)
 ![Suoni Personalizzati](Screenshots/Screenshot%208.png)
-![Guida Integrata](Screenshots/Screenshot%209.png)
